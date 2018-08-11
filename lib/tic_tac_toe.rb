@@ -47,7 +47,7 @@ def turn
 end
 
 def turn_count
-  @board.count {|xo| xo 1= " "}
+  @board.count {|xo| xo != " "}
   # turns = 0
   # @board.each do |space|
   #   if space == "X" || space == "O"
